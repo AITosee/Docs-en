@@ -1,2 +1,2 @@
-# Docs-en
-Tosee english documents
+# Tosee-docs-en
+English translation of Tosee-docs
