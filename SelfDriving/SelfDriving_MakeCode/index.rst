@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MU Self-driving Kit MakeCode Tutorial
-===============================
+MU 3 Self-driving Kit MakeCode Tutorial
+=======================================
 
 本文介绍MU无人驾驶套件在MakeCode环境中开发的教程。
 

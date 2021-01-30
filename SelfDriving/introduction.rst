@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MU Self-driving Kit Introduction
-=======================
+MU3 Self-driving Kit Introduction
+=================================
 
 MU无人驾驶套件是基于MU视觉识别技术而延伸的学习套件。套件包含了一台自动驾驶小车和模块化的路障、地图。
 

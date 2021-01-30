@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MU Vision Sensor 3 Introduction
+MU 3 Introduction
 ===============================
 
 MU Vision Sensor 3(MU 3) is an intelligent vision sensor that can recognize many kinds of objects with deep-learning algorithm inside.
 For example, it can detect color blocks, balls, human body and cards.Its detect result can be transmitted through UART or I2C interface.
-MU 3 is compact, low power consumption, process all algorithms locally, 
+MU 3 is compact, low power consumption, process all algorithms locally,
 and can be widely used in intelligent toys, AI+STEAM lessons, creators and other products or fields.
 
 .. image:: images/MUVS3_main.png
@@ -21,7 +21,7 @@ Hardware Setup
 
 MU supports 4 kinds of communication modes: ``UART,I2C,WIFI,image transmission`` . Change mode by switching ``Output`` switch on left side of MU.
 
-After choosing mode, communication mode in program should be same as switch to make the codes working. 
+After choosing mode, communication mode in program should be same as switch to make the codes working.
 Choose communication mode before coding, and then set other parameters.Every time changing communication mode, MU must be restarted.
 
 .. |FUNC00| image:: images/mu3_func_switch_00.png
@@ -114,7 +114,7 @@ Send following command to know all AT commands：
 
     all commands should end with ``"\r\n"`` or ``' '`` .
 
-MU supports ``AP`` and ``STA`` modes to connect to network. Here is difference between two ways: 
+MU supports ``AP`` and ``STA`` modes to connect to network. Here is difference between two ways:
 
 :AP mode:
 
@@ -129,14 +129,14 @@ MU supports ``AP`` and ``STA`` modes to connect to network. Here is difference b
 
         （For enample: left LED is **R** ed, right LED is **Y**ellow, then default WiFi name is ``Tosee-MU-RY``）
 
-    Send following AT command to change  WiFi name: 
+    Send following AT command to change  WiFi name:
 
     .. code-block:: shell
 
         AT+WIFISET=<yourSSID>,<yourPassword>,AP
         AT+WIFICON=1
 
-    If succeed, returns: 
+    If succeed, returns:
 
     .. code-block:: shell
 
@@ -158,7 +158,7 @@ MU supports ``AP`` and ``STA`` modes to connect to network. Here is difference b
 
         ``<yourSSID>`` 和 ``<yourPassword>`` should be an available WiFi(case sensitive), or connection failed.
 
-    If set successfully, return: 
+    If set successfully, return:
 
     .. code-block:: shell
 
@@ -174,17 +174,17 @@ Set MU to image transmission mode and complete :ref:`WiFi connect <wifi-connect>
 Wireless Transmission
 +++++++++++++++++++++
 
-MU can transmit data in WiFi/image transmission modes.Complete :ref:`WiFi connect <wifi-connect>` and then take following steps: 
+MU can transmit data in WiFi/image transmission modes.Complete :ref:`WiFi connect <wifi-connect>` and then take following steps:
 
     .. note::
 
-        TCP/UDP software are different in PC or mobile devices, here are some common definition: 
+        TCP/UDP software are different in PC or mobile devices, here are some common definition:
 
         - ``local IP`` :  IP address of MU
         - ``target IP`` : IP address of target device that MU send to
 
     1. Open TCP/UDP software, choose ``UDP``, and change mode to ``Unicast``
-    2. Search local IP by sending command to MU: 
+    2. Search local IP by sending command to MU:
 
     .. code-block:: shell
 
@@ -196,10 +196,10 @@ MU can transmit data in WiFi/image transmission modes.Complete :ref:`WiFi connec
 
     .. note::
 
-        In STA mode router will distribute a random address for MU and target device. Take following steps: 
+        In STA mode router will distribute a random address for MU and target device. Take following steps:
 
         1. Search target IP (Most TCP/IP software will show local IP address)
-        2. Send command to MU: 
+        2. Send command to MU:
 
         .. code-block:: shell
 
@@ -211,6 +211,6 @@ MU can transmit data in WiFi/image transmission modes.Complete :ref:`WiFi connec
 
             OK
 
-Now WiFi configuration is finished, and all the data from TCP/UDP software will show on MU serial port, and 
+Now WiFi configuration is finished, and all the data from TCP/UDP software will show on MU serial port, and
 all data from MU serial port will show on TCP/UDP software.
 

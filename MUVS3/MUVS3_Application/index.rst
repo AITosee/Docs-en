@@ -3,12 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MU Vision Sensor Application
+MU 3 Sample Applications
 ===============================
 
 .. toctree::
     :maxdepth: 1
-    :glob: 
-	
+    :glob:
+
     MUVS3_Application.md
-	
